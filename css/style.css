@@ -173,9 +173,27 @@ body {
     text-align: justify;
 }
 
+.content-text a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content-text a:hover {
+    color: lightgrey;
+}
+
+.content-text a:active {
+    color: lightslategrey;
+}
+
+.content-text a:visited {
+    color: lightslategrey;
+}
+
 .content-img {
     align-self: center;
-    max-width: 200px;
+    max-width: 100%;
     padding: 1em;
 }
 
