@@ -238,6 +238,10 @@ footer {
     margin: 6px;
 }
 
+.footer-inner {
+    margin-top: 6px;
+}
+
 footer p {
     padding: 0;
     margin: 0;
