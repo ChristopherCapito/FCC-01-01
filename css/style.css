@@ -168,6 +168,10 @@ body {
     text-align: center;
 }
 
+.content-inner .no-img {
+    display: block;
+}
+
 .content-text {
     word-wrap: break-word;
     text-align: justify;
