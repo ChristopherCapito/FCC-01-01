@@ -235,7 +235,50 @@ body {
 footer {
     text-align: center;
     color: lightsteelblue;
+    margin: 6px;
 }
+
+footer p {
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightsteelblue;
+    margin: 0 6px 0 6px;
+}
+
+footer a:hover {
+    color: steelblue;
+}
+
+footer a:active {
+    font-weight: bold;
+}
+
+
+/*About Page specific styles*/
+.about-wrapper {
+    color: var(--main-text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#about-title {
+    color: var(--main-text-color);
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+
+}
+
+#about-title h1 {
+    margin: 0;
+    margin-bottom: 6px;
+}
+
 
 /*Media queries - Responsive timeline on screens less than 600px wide*/
 @media screen and (max-width:1000px) and (min-width:601px) {
