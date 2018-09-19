@@ -168,8 +168,8 @@ body {
     text-align: center;
 }
 
-.content-inner .no-img {
-    display: block;
+.no-img {
+    grid-template-columns: 1fr;
 }
 
 .content-text {
