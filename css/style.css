@@ -162,6 +162,23 @@ body {
         0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+.content-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.content-text {
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.content-img {
+    align-self: center;
+    max-width: 200px;
+    padding: 1em;
+}
+
 #timeline-end {
     column-count: 2;
     column-width: 50%;
@@ -198,8 +215,13 @@ footer {
     color: lightsteelblue;
 }
 
-
 /*Media queries - Responsive timeline on screens less than 600px wide*/
+@media screen and (max-width:1000px) and (min-width:601px) {
+    .content-inner {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     #title {
@@ -239,7 +261,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 545px) {
     #title {
         color: var(--main-text-color);
         font-size: 1.2em;
@@ -251,6 +273,10 @@ footer {
 
     #image {
         filter: grayscale(0.8);
+    }
+
+    .content-inner {
+        display: block;
     }
 }
 
@@ -278,6 +304,10 @@ footer {
 
     .rightlink {
         border-bottom-left-radius: 6px;
+    }
+
+    .content-img {
+        width: 150px;
     }
 
 }
